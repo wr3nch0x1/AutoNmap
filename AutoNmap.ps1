@@ -19,9 +19,9 @@ Write-Host "[!] Please Make sure all IP Addresses are under C:\ip.txt" -Foregrou
 
 
 $pram1 = "-v -Pn -iL C:\ip.txt -oA C:\PanaceaInfosec\tcp-top-port"
-$pram2 = "-v -p- -Pn -iL C:\ip.txt -oA C:\PanaceaInfosec\tcp-top-port"
-$pram3 = "-v -sU -Pn -iL C:\ip.txt -oA C:\PanaceaInfosec\tcp-top-port"
-$pram4 = "-v -sU -Pn -p- -iL C:\ip.txt -oA C:\PanaceaInfosec\tcp-top-port"
+$pram2 = "-v -p- -Pn -iL C:\ip.txt -oA C:\PanaceaInfosec\tcp-all-port"
+$pram3 = "-v -sU -Pn -iL C:\ip.txt -oA C:\PanaceaInfosec\udp-top-port"
+$pram4 = "-v -sU -Pn -p- -iL C:\ip.txt -oA C:\PanaceaInfosec\udp-all-port"
 
 mkdir -Path "C:\PanaceaInfosec\" -erroraction 'silentlycontinue'
 
